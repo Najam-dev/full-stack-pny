@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3 align="center">Nested Tables</h3>
+    <table align="center" border="2" style="text-align: center;" cellpadding="5" width="70%">
+        <tr>
+            <th>Header column 1</th>
+            <th>Header column 2</th>
+            <th>Header column 3</th>
+            <th>Header column 4</th>
+        </tr>
+        <tr align="left">
+            <td>Row 2 - item 1</td>
+            <td>Row 2 - item 2</td>
+            <th rowspan="2">Row 2: Nested Table 1
+                <table align="center" border="2" style="text-align: center;">
+                    <tr>
+                        <th>Row 1 Header</th>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th>Row 1 Header</th>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th>Row 1 Header</th>
+                        <td>item</td>
+                    </tr>
+                </table>
+            </th>
+            <td>Row 2 - item 4 <br> A second line</td>
+        </tr>
+        <tr align="left">
+            <th>Row 3: Nested Table 2
+                <table border="2" style="text-align: center;">
+                   <tr>
+                        <th>Row 1 Header</th>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th>Row 1 Header</th>
+                        <td>item</td>
+                    </tr>
+                </table>
+            </th>
+            <td>Row 3 - item 2</td>
+            <td rowspan="2">Row 3 - item 3</td>
+        </tr>
+        <tr align="left">
+            <td>Row 4 - item 1</td>
+            <td>Row 4 - item 2</td>
+            <td>Row 4 - item 3</td>
+        </tr>
+        <tr align="left">
+            <td colspan="4">Last Row of outer table</td>
+        </tr>
+    </table>
+
+</body>
+</html>
