@@ -45,7 +45,7 @@ main{
 
 .left{
     float: left;
-    width: 40%;
+    width: 44%;
     padding-left: 65px;
 }
 
@@ -99,7 +99,7 @@ main{
 }
 
 .box1 ul, .box2 ul, .box3 ul, .box4 ul{
-    padding-left: 24px;
+    padding-left: 10px;
     margin: 0;
 }
 
@@ -111,6 +111,10 @@ main{
 
 .box1 ul li a:hover, .box2 ul li a:hover, .box3 ul li a:hover, .box4 ul li a:hover{
     color: #9aa4ad;
+}
+
+.box1 ul li, .box2 ul li{
+    line-height: 0.9;
 }
 
 .box1 p, .box3 p, .box4 p{
