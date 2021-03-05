@@ -1,0 +1,25 @@
+.header h2{
+    color: purple;
+    padding-bottom: 19px;
+    border-bottom: 2px solid black;
+    width: 50%;
+}
+
+.header p{
+    font-weight: 600;
+}
+
+form{
+    background-color: rgb(148, 104, 46);
+    padding: 20px;
+}
+
+fieldset legend{
+    color: rgb(44, 44, 204);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+input, select{
+    margin-bottom: 15px;
+}
