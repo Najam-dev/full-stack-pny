@@ -23,3 +23,42 @@ fieldset legend{
 input, select{
     margin-bottom: 15px;
 }
+
+.address{
+    
+}
+
+.pinfo span{
+    padding-right: 10px;
+}
+
+.pinfo textarea{
+    resize: none;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.part1{
+    float: left;
+    width: 33.33%;
+}
+
+.part2{
+    float: left;
+    width: 33.33%;
+}
+
+.part3{
+    float: left;
+    width: 33.33%;
+}
+
+.comments textarea{
+    width: 500px;
+    height: 150px;
+}
+
+.footer a{
+    color: red;
+    text-decoration: none;
+}
