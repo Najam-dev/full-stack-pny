@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(15, 12, 12);
+
+        }
+
+        .first{
+            background-color: black;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            animation-name: first;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+
+        .first:hover{
+            width: 200px;
+            height: 200px;
+            transition-duration: 2s;
+        }
+
+        .second{
+            background-color: black;
+            position: relative;
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+            animation-name: second;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        .third{
+            background-color: black;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            animation-name: third;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .fourth{
+            background-color: black;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            animation-name: fourth;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        .fifth{
+            background-color: black;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            animation-name: third;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        .sixth{
+            background-color: black;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            animation-name: sixth;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes first {
+            0% {background-color: black; top:0px; left: 0px; border-radius: 100%; opacity: 0.5;}
+            /* 25% {background-color: white; top: 150px; left: 150px;  border-radius: 100%;} */
+            50% {background-color: white; top: 300px; left: 300px;  border-radius: 100%; opacity: 1;}
+            /* 75% {background-color: white; top: 150px; left: 150px;  border-radius: 100%;} */
+            100% {background-color: black; top:0px; left: 0px;  border-radius: 100%; opacity: 0.5;}
+        }
+
+        @keyframes second {
+            0% {background-color: lightcyan; top:0px; left: 0px; border-radius: 100%; opacity: 0.5;}
+            /* 25% {background-color: white; top: 150px; left: 150px;  border-radius: 100%;} */
+            50% {background-color: blue; top: 300px; left: 300px;  border-radius: 100%; opacity: 1;}
+            /* 75% {background-color: white; top: 150px; left: 150px;  border-radius: 100%;} */
+            100% {background-color: lightcyan; top:0px; left: 0px;  border-radius: 100%; opacity: 0.5;}
+        }
+
+        @keyframes third {
+            0% {background-color: lightgreen; top:100px; left: 0px; border-radius: 100%;}
+            /* 25% {background-color: white; top: 100px; left: 150px;  border-radius: 100%;} */
+            50% {background-color: darkgreen; top: 100px; left: 300px;  border-radius: 100%; opacity: 1; width: 100px; height: 100px;}
+            /* 75% {background-color: white; top: 100px; left: 150px;  border-radius: 100%;} */
+            100% {background-color: lightgreen; top:100px; left: 0px;  border-radius: 100%;}
+        }
+
+        @keyframes fourth {
+            0% {background-color: rgb(224, 144, 238); top:50px; left: 0px; border-radius: 100%;}
+            /* 25% {background-color: white; top: 100px; left: 150px;  border-radius: 100%;} */
+            50% {background-color: rgb(88, 0, 100); top: 100px; left: 350px;  border-radius: 100%; opacity: 1; width: 35px; height: 35px;}
+            /* 75% {background-color: white; top: 100px; left: 150px;  border-radius: 100%;} */
+            100% {background-color: rgb(224, 144, 238); top:50px; left: 0px;  border-radius: 100%;}
+        }
+
+        @keyframes fifth {
+            0% {background-color: black; top:0px; left: 100px; border-radius: 100%; opacity: 0.5;}
+            /* 25% {background-color: white; top: 150px; left: 150px;  border-radius: 100%;} */
+            50% {background-color: transparent; top: 500px; left: 500px;  border-radius: 100%; opacity: 1; width: 150px; height: 150px;}
+            /* 75% {background-color: white; top: 150px; left: 150px;  border-radius: 100%;} */
+            100% {background-color: black; top:0px; left: 100px;  border-radius: 100%; opacity: 0.5;}
+        }
+
+        @keyframes sixth {
+            0% {background-color: rgb(224, 144, 238); top:0px; left: 200px; border-radius: 100%;}
+            /* 25% {background-color: white; top: 100px; left: 150px;  border-radius: 100%;} */
+            50% {background-color: rgb(88, 0, 100); top: 100px; left: 350px;  border-radius: 100%; opacity: 1; width: 35px; height: 35px;}
+            /* 75% {background-color: white; top: 100px; left: 150px;  border-radius: 100%;} */
+            100% {background-color: rgb(224, 144, 238); top: 0px; left: 200px;  border-radius: 100%;}
+        }
+    </style>
+
+</head>
+<body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div>
+    <div class="fifth"></div>
+    <div class="sixth"></div>
+</body>
+</html>

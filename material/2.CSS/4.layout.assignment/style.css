@@ -81,7 +81,8 @@ main{
 }
 
 .boxes{
-    margin: 10px 50px;
+    margin: 10px 50px 30px 50px;
+    height: 380px;
 }
 
 .box1{
