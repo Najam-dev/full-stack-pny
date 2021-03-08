@@ -1,0 +1,107 @@
+.header h2{
+    color: purple;
+    padding-bottom: 19px;
+    border-bottom: 2px solid black;
+    width: 50%;
+}
+
+.header p{
+    font-weight: 600;
+}
+
+form{
+    background-color: rgb(148, 104, 46);
+    padding: 20px;
+}
+
+fieldset{
+    margin-bottom: 35px;
+}
+
+fieldset legend{
+    color: rgb(44, 44, 204);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+input, select{
+    margin-bottom: 15px;
+}
+
+.pinfo span{
+    padding-right: 10px;
+}
+
+.address{
+    position: relative;
+    top: -35px;
+}
+
+.pinfo textarea{
+    resize: none;
+    height: 50px;
+    width: 170px;
+    margin-bottom: 15px;
+    position: relative;
+    left: -10px;
+}
+
+.boxes{
+    display: flex;
+}
+
+/* .part1{
+    float: left;
+    width: 33.33%;
+}
+
+.part2{
+    float: left;
+    width: 33.33%;
+}
+
+.part3{
+    float: left;
+    width: 33.33%;
+} */
+
+.part1{
+    flex-grow: 1;
+    align-items: center;
+    justify-items: center;
+}
+
+.part2{
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.part3{
+    flex-grow: 3;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.ginfo span{
+    padding-left: 20px;
+}
+
+.comments fieldset{
+    margin-bottom: 0;
+}
+
+.comments legend{
+    margin-bottom: 18px;
+}
+
+.comments textarea{
+    width: 500px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+.footer a{
+    color: red;
+    text-decoration: none;
+}
