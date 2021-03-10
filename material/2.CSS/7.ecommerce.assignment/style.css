@@ -24,10 +24,10 @@ nav{
     justify-content: space-between;
 }
 
-.img-tag img{
+/* .img-tag img{
     position: relative;
     left: 100px;
-}
+} */
 
 .left{
     display: flex;
