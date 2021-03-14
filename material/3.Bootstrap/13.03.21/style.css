@@ -1,0 +1,11 @@
+#logo{
+    height: 60px;
+    width: 60px;
+}
+
+main{
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}

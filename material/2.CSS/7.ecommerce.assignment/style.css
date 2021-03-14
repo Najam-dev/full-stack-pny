@@ -79,8 +79,47 @@ nav{
 
 .right ul{
     transform: translateX(20px);
+    list-style: url(images/nav_bullet.png);
 }
 
 .right ul li a{
     color: rgb(112,110,110);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .left-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main ul li{
+    /* list-style: inside url(images/nav_bullet.png); */
+    padding: 5px;
+    transform: translateX(10px);
+}
+
+main ul li::before{
+    background-image: url("images/nav_bullet.png");
+}
+
+main ul li a{
+    color: rgb(112,110,110);
+    text-decoration: none;
+}
+
+main .right-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
