@@ -4,7 +4,7 @@
 }
 
 body{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -12,6 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
 }
 
 .logo{
@@ -93,6 +94,7 @@ main{
     border-bottom: 4px solid rgb(221, 219, 219);
     position: relative;
     top: -25px;
+    width: 96%;
 }
 
 
@@ -132,14 +134,17 @@ main .right-main img{
 
 .big-main{
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    position: relative;
+    top: -15px;
+    width: 97%;
+    border-bottom: 5px solid darkgrey;
 }
 
 section{
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;  
+    margin-top: -16px;
 }
 
 .first-section{
@@ -250,6 +255,10 @@ section{
     margin-left: 5px;
 }
 
+.description h4:nth-child(2){
+    color: red;
+}
+
 .options{
     margin-top: 8px;
     margin-bottom: 7px;
@@ -287,7 +296,7 @@ section{
 
 .feature2{
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .aside{
@@ -295,10 +304,11 @@ section{
     background: rgb(223, 224, 224);
 }
 
-.aside1{
+.aside1, .aside2, .aside3{
     display: flex;
     margin-top: 16px;
-    height: 50px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted grey;
 }
 
 .aside-head{
@@ -313,6 +323,7 @@ section{
 
 .aside-body{
     margin: 15px 15px;
+    height: 100px;
 }
 
 .aside-body img{
@@ -339,6 +350,57 @@ section{
     margin-bottom: 5px;
 }
 
-.aside-des h4:nth-child(2){
-    padding-top: 55px;
+.aside-des h4{
+    color: red;
+}
+
+.main1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom{
+    margin-left: 5px;
+}
+
+.bottom img{
+    width: 491px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.payments{
+    display: flex;
+    width: auto;
+}
+
+.payments img:nth-child(2), .payments img:nth-child(3){
+    margin-left: 5px;
+}
+
+.pages-links a{
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+.links{
+    width: auto;
+}
+
+.pages-links a:nth-child(1){
+    padding: 0 3px 0 0;
+}
+
+.copyright{
+    color: rgb(112,110,110);
+}
+
+.copyright a{
+    color: rgb(112,110,110);
+    font-weight: bold;
 }
