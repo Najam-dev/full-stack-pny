@@ -70,16 +70,14 @@ main p{
     background: url(img/blog-bg.png) no-repeat;
     background-size: cover;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border: none;
     border-radius: 20px;
 }
 
 .btn-white{
-    /* background: url(img/blog-bg.png) no-repeat;
-    background-size: cover; */
     color: black;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border: none;
     border-radius: 20px;
 }
@@ -157,7 +155,7 @@ main p{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 400px;
 }
 
 .second-left{
@@ -204,7 +202,7 @@ main p{
 }
 
 .section3{
-    height: 100vh;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +234,7 @@ main p{
     background: url("img/blog-bg.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 60vh;
+    height: 450px;
     color: white;
     display: flex;
     text-align: center;
@@ -302,4 +300,87 @@ main p{
 .main-fourth{
     display: flex;
     justify-content: space-evenly;
+}
+
+.fifth-cards{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(219, 214, 214);
+    color: white;
+    height: 100px;
+    width: 170px;
+}
+
+.card1 h3{
+    color: #7da86a;
+}
+
+.card1 p{
+    color: rgba(0, 0, 0, 0.466);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section6{
+    background: url("img/contact-bg.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;   
+    align-items: center;
+}
+
+.sixth-section h2{
+    margin-bottom: 30px;
+    border-bottom: 5px solid;
+    width: 23%;
+    padding-bottom: 5px;
+    margin: 0 auto 50px auto;
+}
+
+.sixth-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input{
+    padding: 5px;
+    /* margin: 0 10px 10px 0; */
+}
+
+form textarea{
+    height: 180px;
+    width: 370px;
+    /* margin: 10px 10px 10px 0; */
+}
+
+.form-btn{
+    
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
