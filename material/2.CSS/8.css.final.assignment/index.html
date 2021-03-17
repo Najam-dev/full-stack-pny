@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Layout</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css-master/animate.min.css">
 </head>
 <body>
     
     <header>
         <div class="container">
             <div class="nav-bar">
-                <div class="logo">
+                <div class="logo wow flash">
                     <img src="img/white_logo.png" alt="logo">
                 </div>
                 <nav>
@@ -27,7 +28,7 @@
             </div>
             <main>
                 <p class="intro">Introduction to</p>
-                <h3>Creative Meteor</h3>
+                <h3 class="wow tada">Creative Meteor</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quibusdam molestias dolor expedita possimus provident nihil eveniet numquam! Aut, aliquid.</p>
                 <button class="btn-green">Discover More</button>
             </main>
@@ -74,7 +75,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae non consectetur quaerat quis vero suscipit in iusto saepe sint aperiam</p>
                     <div>
                         <button class="btn-white">Discover More</button>
-                        <button class="btn-green">Purchase Now</button>
+                        <button class="btn-green wow zoomIn">Purchase Now</button>
                     </div>
                 </div>
                 <div class="second-right">
@@ -207,5 +208,9 @@
     </section>
 
     <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
+    <script src="WOW-master/dist/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
