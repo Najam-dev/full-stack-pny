@@ -9,6 +9,7 @@ body{
 
 header{
     background: url("img/slide_01.jpg") no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
 }
@@ -147,6 +148,7 @@ main p{
 
 .section2{
     background: url("img/what-we-do-bg.png") no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 60vh;
 }
@@ -228,4 +230,76 @@ main p{
     height: 150px;
     width: 150px;
     padding: 0 20px 20px 0;
+}
+
+.section4{
+    background: url("img/blog-bg.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.fourth-section{
+    margin-top: 50px;
+}
+
+.fourth-section h2{
+    margin-bottom: 30px;
+    border-bottom: 5px solid;
+    width: 23%;
+    padding-bottom: 5px;
+    margin: 0 auto 50px auto;
+}
+
+.fourth-left .left-img{
+    background: url("img/food1.jpg") no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 330px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.fourth-left .des-img, .right-img1 .des-img, .right-img2 .des-img{
+    background: rgba(0,0,0,0.5);
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+
+.fourth-left .des-img h3, .right-img1 .des-img h3, .right-img2 .des-img h3{
+    font-size: 15px;
+}
+
+.fourth-left .des-img p, .right-img1 .des-img p, .right-img2 .des-img p{
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.fourth-right .right-img1{
+    background: url("img/food2.jpg") no-repeat;
+    background-size: cover;
+    height: 125px;
+    width: 330px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.fourth-right .right-img2{
+    background: url("img/food3.jpg") no-repeat;
+    background-size: cover;
+    height: 125px;
+    width: 330px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-fourth{
+    display: flex;
+    justify-content: space-evenly;
 }
