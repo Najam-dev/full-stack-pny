@@ -146,16 +146,20 @@ main p{
 
 .section2{
     background: url("img/what-we-do-bg.png") no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    height: 60vh;
+    background-attachment: fixed;
+    height: 450px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;   
+    align-items: center;
 }
 
 .second-section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
 }
 
 .second-left{
@@ -335,12 +339,16 @@ main p{
     background: url("img/contact-bg.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 450px;
+    height: 500px;
     color: white;
     display: flex;
     text-align: center;
     justify-content: center;   
     align-items: center;
+}
+
+.sixth-section{
+    margin-top: 50px;
 }
 
 .sixth-section h2{
@@ -365,22 +373,33 @@ form{
 }
 
 form input{
-    padding: 5px;
-    /* margin: 0 10px 10px 0; */
+    padding: 10px;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    border: none;
 }
 
 form textarea{
-    height: 180px;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    height: 150px;
     width: 370px;
-    /* margin: 10px 10px 10px 0; */
+    background: rgba(255,255,255,0.05);
+    color: white;
 }
 
 .form-btn{
-    
+    float: left;   
 }
 
 footer{
+    margin-top: 50px;   
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+footer p{
+    font-size: 12px;
 }
