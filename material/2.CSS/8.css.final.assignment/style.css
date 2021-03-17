@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+header{
+    background: url("img/slide_01.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    color: white;
+}
+
+.intro{
+    margin-bottom: 3px;
+}
+
+main h3{
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+main p{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.btn-green{
+    background: url(img/blog-bg.png) no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-white{
+    /* background: url(img/blog-bg.png) no-repeat;
+    background-size: cover; */
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.section1{
+    height: 400px;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: auto;
+}
+
+.main-section img{
+    height: 4px;
+    width: 55px;
+    margin-top: 5px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid darkgrey;
+    background: grey;
+    -webkit-box-shadow: -5px -8px 15px -7px rgba(0,0,0,0.22);
+    -moz-box-shadow: -5px -8px 15px -7px rgba(0,0,0,0.22);
+    box-shadow: -5px -8px 15px -7px rgba(0,0,0,0.22);
+    margin-left: 10px;
+    height: 170px;
+    color: white;
+}
+
+.card img{
+    height: 30px;
+    width: 30px;
+}
+
+.card:nth-child(1){
+    margin-left: 0;
+}
+
+.card h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.card p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.section2{
+    background: url("img/what-we-do-bg.png") no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.second-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.second-left{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-left h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.second-left p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.second-right{
+    display: flex;
+}
+
+.second-right img{
+    width: 150px;
+    height: 150px;
+}
+
+.second-right img:nth-child(1){
+    position: relative;
+    right: -70px;
+    z-index: 2;
+}
+
+.second-right img:nth-child(2){
+    position: relative;
+    top: -50px;
+}
+
+.second-right img:nth-child(3){
+    position: relative;
+    left: -100px;
+    top: 50px;
+    z-index: 1;
+}
+
+.section3{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3-links{
+    margin-top: 50px;
+}
+
+.section3-links a{
+    color: rgb(56, 51, 51);
+}
+
+.section3-links .green{
+    color: #A4D28F;
+}
+
+.img-boxes{
+    margin-top: 50px;
+}
+
+.img-boxes img{
+    height: 150px;
+    width: 150px;
+    padding: 0 20px 20px 0;
+}
