@@ -8,74 +8,92 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style>
+        body{
+            /* overflow-x: hidden; */
+        }
+
+        /* small screens */
+        @media only screen and (min-width: 600px) {
+            .card{
+                margin-top: 10px;
+            }
+        }
+
+        /* extra small screens */
+        @media only screen and (max-width: 600px) {
+            .card{
+                margin-top: 10px;
+            }
+        }
+    </style>
+
   </head>
   <body>
 
-         <div class=""> <!-- container class -->
+         <div class="container"> <!-- container class -->
             <div class="row no-gutters">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-xs-12">
                     <div class="row no-gutters">
                         <img src="img/employe.jpg" class="img-fluid img-responsive" style="min-width: 100%;">
                     </div>
-                    
                 </div>
-                <div class="col-md-8 col-sm-12">
-                    <div class="row">
-                        <div class="p-5 container-fluid bg-dark">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h1 class="display-4 text-white">M.Najam</h1>
-                                <div>
-                                    <a href="#" class="text-white">
-                                        <i class="fab fa-twitter" style="font-size: 18px;"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="text-white">
-                                        <i class="fab fa-facebook" style="font-size: 18px;"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="text-white">
-                                        <i class="fab fa-github" style="font-size: 18px;"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="text-white">
-                                        <i class="fab fa-linkedin" style="font-size: 18px;"></i>
-                                    </a>
-                                </div>
-                            </div>                           
-                        </div>
-                        <div class="col-12 container-fluid" style="background: black;">
-                            <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non saepe, ipsum ipsa aspernatur modi quia id? Ipsa, quis magni</p>
-                        </div>
-                        <div class="col-12 container-fluid">
-                            <div class="row">
-                                <div class="col-md-3 bg-primary text-center pt-2">
-                                    <a href="#home" class="text-white">
-                                        <i class="fas fa-home" style="font-size: 22px;"></i>
-                                        <p>HOME</p>
-                                    </a>
-                                    
-                                </div>
-                                <div class="col-md-3 bg-success text-center pt-2">
-                                    <a href="#resume" class="text-white">
-                                        <i class="fas fa-graduation-cap" style="font-size: 22px;"></i>
-                                        <p>RESUME</p>
-                                    </a>
-                                </div>
-                                <div class="col-md-3 bg-danger text-center pt-2">
-                                    <a href="#work" class="text-white">
-                                        <i class="fas fa-folder" style="font-size: 22px;"></i>
-                                        <p>WORK</p>
-                                    </a>
-                                </div>
-                                <div class="col-md-3 bg-warning text-center pt-2">
-                                    <a href="#home" class="text-white">
-                                        <i class="fas fa-box" style="font-size: 22px;"></i>
-                                        <p>HOME</p>
-                                    </a>
-                                </div>
+                <div class="col-md-8 col-xs-12">
+                    <div class="p-5 container-fluid bg-dark">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h1 class="display-4 text-white">M.Najam</h1>
+                            <div>
+                                <a href="#" class="text-white">
+                                    <i class="fab fa-twitter" style="font-size: 18px;"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="text-white">
+                                    <i class="fab fa-facebook" style="font-size: 18px;"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="text-white">
+                                    <i class="fab fa-github" style="font-size: 18px;"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="text-white">
+                                    <i class="fab fa-linkedin" style="font-size: 18px;"></i>
+                                </a>
+                            </div>
+                        </div>                           
+                    </div>
+                    <div class="col-12" style="background: black;">
+                        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non saepe, ipsum ipsa aspernatur modi quia id? Ipsa, quis magni</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary text-center pt-2">
+                                <a href="#home" class="text-white">
+                                    <i class="fas fa-home" style="font-size: 22px;"></i>
+                                    <p>HOME</p>
+                                </a>
+                                
+                            </div>
+                            <div class="col-md-3 bg-success text-center pt-2">
+                                <a href="#resume" class="text-white">
+                                    <i class="fas fa-graduation-cap" style="font-size: 22px;"></i>
+                                    <p>RESUME</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3 bg-danger text-center pt-2">
+                                <a href="#work" class="text-white">
+                                    <i class="fas fa-folder" style="font-size: 22px;"></i>
+                                    <p>WORK</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3 bg-warning text-center pt-2">
+                                <a href="#home" class="text-white">
+                                    <i class="fas fa-box" style="font-size: 22px;"></i>
+                                    <p>HOME</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +144,7 @@
                     </div>
                     <div class="container">
                         <div class="row pb-5">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-12">
                                 <div class="card">
                                     <div class="card-body">
                                       <h5 class="card-title">Sample text</h5>
@@ -139,7 +157,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-12">
                                 <div class="card">
                                     <div class="card-body">
                                       <h5 class="card-title">Card title</h5>
@@ -152,7 +170,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-12">
                                 <div class="card">
                                     <div class="card-body">
                                       <h5 class="card-title">Card title</h5>
