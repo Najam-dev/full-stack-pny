@@ -1,0 +1,67 @@
+/* small screens */
+@media only screen and (min-width: 600px) {
+    .section1{
+        height: 200px;
+    }
+
+    .section2 .card{
+        margin-top: 10px;
+    }
+}
+
+/* extra small screens */
+@media only screen and (max-width: 600px) {
+    .section1 h2:nth-child(1){
+        margin-top: 50px;
+    }
+
+
+    .section2 .card{
+        margin-top: 10px;
+    }
+
+    .section3 button{
+        margin-bottom: 10px;
+    }
+}
+
+
+header{
+    background: url("img/slide_01.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.section1{
+    min-height: 91%;
+}
+
+.section3{
+    background: url("img/what-we-do-bg.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section3 img{
+    width: 150px;
+    height: 150px;
+}
+
+.section3 img:nth-child(1){
+    position: relative;
+    right: -100px;
+    top: 30px;
+}
+
+.section3 img:nth-child(2){
+    position: relative;
+    right: 150px;
+    top: 90px;
+    z-index: 1;
+}
+
+.section3 img:nth-child(3){
+    position: relative;
+    left: 130px;
+}
