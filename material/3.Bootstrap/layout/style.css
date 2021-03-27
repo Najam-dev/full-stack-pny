@@ -32,7 +32,14 @@
     .img-1, .img-2, .img-3{
         margin-top: 15px;
         min-height: 300px;
+    }
 
+    .section6 .card{
+        margin-top: 10px;
+    }
+
+    .section7 form{
+        margin-top: 15px;
     }
 
 
@@ -58,6 +65,14 @@
         min-height: 300px;
     }
 
+    .section6 .card{
+        margin-top: 10px;
+    }
+
+    .section7 form{
+        margin-top: 15px;
+    }
+
 }
 
 
@@ -70,6 +85,12 @@ header{
 
 .section1{
     min-height: 91%;
+}
+
+.section2 .card-shadow{
+    -webkit-box-shadow: -5px -8px 15px -7px rgba(0,0,0,0.22);
+    -moz-box-shadow: -5px -8px 15px -7px rgba(0,0,0,0.22);
+    box-shadow: -5px -8px 15px -7px rgba(0,0,0,0.22);
 }
 
 .section3{
@@ -126,4 +147,32 @@ header{
     background: rgba(0,0,0,0.5);
     width: 100%;
     padding: 5px;
+}
+
+.bg-lightgrey{
+    background: #E9ECEF;
+}
+
+.section7{
+    background: url("img/contact-bg.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section7 h2{
+    padding-bottom: 8px;
+    border-bottom: 5px solid;
+}
+
+.transparent-input{
+    background-color: rgba(0,0,0,0.3) !important;
+    border: none !important;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+footer .socials{
+    font-size: 25px;
 }
