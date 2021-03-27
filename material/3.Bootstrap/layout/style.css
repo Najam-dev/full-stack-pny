@@ -3,6 +3,10 @@
     .img-2, .img-3{
         height: 100px;
     }
+
+    footer .socials{
+        font-size: 25px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -10,12 +14,20 @@
     .img-2, .img-3{
         height: 100px;
     }
+
+    footer .socials{
+        font-size: 25px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .img-2, .img-3{
         height: 100px;
+    }
+
+    footer .socials{
+        font-size: 25px;
     }
 }
 
@@ -40,6 +52,14 @@
 
     .section7 form{
         margin-top: 15px;
+    }
+
+    .section7 iframe{
+        width: 250px;
+    }
+
+    .socials{
+        font-size: 15px;
     }
 
 
@@ -71,6 +91,14 @@
 
     .section7 form{
         margin-top: 15px;
+    }
+
+    .section7 iframe{
+        width: 250px;
+    }
+
+    .socials{
+        font-size: 15px;
     }
 
 }
@@ -171,8 +199,4 @@ header{
 
 footer p{
     font-size: 12px;
-}
-
-footer .socials{
-    font-size: 25px;
 }
