@@ -1,3 +1,24 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .img-2, .img-3{
+        height: 100px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .img-2, .img-3{
+        height: 100px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .img-2, .img-3{
+        height: 100px;
+    }
+}
+
 /* small screens */
 @media only screen and (min-width: 600px) {
     .section1{
@@ -7,6 +28,14 @@
     .section2 .card{
         margin-top: 10px;
     }
+
+    .img-1, .img-2, .img-3{
+        margin-top: 15px;
+        min-height: 300px;
+
+    }
+
+
 }
 
 /* extra small screens */
@@ -23,6 +52,12 @@
     .section3 button{
         margin-bottom: 10px;
     }
+    
+    .img-1, .img-2, .img-3{
+        margin-top: 15px;
+        min-height: 300px;
+    }
+
 }
 
 
@@ -64,4 +99,31 @@ header{
 .section3 img:nth-child(3){
     position: relative;
     left: 130px;
+}
+
+.section5{
+    background: url("img/blog-bg.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img-1{
+    background: url("img/food1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img-2{
+    background: url("img/food2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img-3{
+    background: url("img/food3.jpg") no-repeat;
+    background-size: cover;
+}
+
+.bg-opacity{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 5px;
 }
