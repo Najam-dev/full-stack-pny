@@ -1,0 +1,22 @@
+body{
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+}
+
+main{
+    height: 100vh;
+}
+
+tbody, input{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+input{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron{
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+    margin-top: 0;
+}
