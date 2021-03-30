@@ -40,5 +40,5 @@ function empty(){
     document.getElementById("q5").value = "";
 
     document.getElementById("show").innerHTML = "";
-    document.getElementById("thanks").innerHTML = ""
+    document.getElementById("thanks").innerHTML = "";
 }
