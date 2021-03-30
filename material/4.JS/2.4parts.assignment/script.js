@@ -37,9 +37,9 @@ function quadrants(){
         document.getElementById("quad1").innerHTML = "<span class=\"alert alert-success\">"+"("+x+", "+y+")"+" lies in <b>1st Quadrant</b></span>";
     } else if (x < 0 && y > 0){
         document.getElementById("quad2").innerHTML = "<span class=\"alert alert-success\">"+"("+x+", "+y+")"+" lies in <b>2nd Quadrant</b></span>";
-    } else if (x > 0 && y < 0){
-        document.getElementById("quad3").innerHTML = "<span class=\"alert alert-success\">"+"("+x+", "+y+")"+" lies in <b>3rd Quadrant</b></span>";
     } else if (x < 0 && y < 0){
+        document.getElementById("quad3").innerHTML = "<span class=\"alert alert-success\">"+"("+x+", "+y+")"+" lies in <b>3rd Quadrant</b></span>";
+    } else if (x > 0 && y < 0){
         document.getElementById("quad4").innerHTML = "<span class=\"alert alert-success\">"+"("+x+", "+y+")"+" lies in <b>4th Quadrant</b></span>";
     } else{
         console.log("Lies on quadrant");
