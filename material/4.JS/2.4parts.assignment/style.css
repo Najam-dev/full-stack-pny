@@ -1,0 +1,108 @@
+@media only screen and (min-width: 768px) {
+    .first{
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .second{
+        border: none;
+    }
+
+    .third{
+        border: none;
+    }
+
+    .fourth{
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .first{
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .second{
+        border: none;
+    }
+
+    .third{
+        border: none;
+    }
+    
+    .fourth{
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .first{
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .second{
+        border: none;
+    }
+
+    .third{
+        border: none;
+    }
+
+    .fourth{
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+    }
+}
+
+/* small screens */
+@media only screen and (min-width: 600px) {
+    .first{
+        border-bottom: 1px solid white;   
+    }
+
+    .second{
+        border-bottom: 1px solid white;   
+    }
+
+    .third{
+        border-bottom: 1px solid white;   
+    }
+
+    .fourth{
+        border-bottom: 1px solid white;   
+    }
+}
+
+/* extra small screens */
+@media only screen and (max-width: 600px) {
+    .first{
+        border-bottom: 1px solid white;   
+    }
+
+    .second{
+        border-bottom: 1px solid white;   
+    }
+
+    .third{
+        border-bottom: 1px solid white;   
+    }
+
+    .fourth{
+        border-bottom: 1px solid white;   
+    }
+}
+
+main{
+    margin: auto;
+}
+
+#quad1, #quad2, #quad3, #quad4{
+    width: 100%;
+    height: 200px;
+}

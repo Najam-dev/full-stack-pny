@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>4 parts Assignment</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <main class="bg-dark">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-6 p-3 first">
+                    <div class="text-white">
+                        <h2>Check Even or Odd</h2>
+                        <div class="">
+                            <div>
+                                <label>Number:</label>
+                                <input type="number" class="form-control" id="n1" placeholder="check odd or even...">
+                            </div>
+                            <div class="mt-2 d-flex">
+                                <button class="btn btn-primary" onclick="evenOrodd()">OK</button>
+                                <div class="ml-auto mt-2" id="evenOrodd"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-3 second">
+                    <div class="text-white">
+                        <h2>Check Positive or Negative</h2>
+                        <div class="">
+                            <div>
+                                <label>Number:</label>
+                                <input type="number" class="form-control" id="n2" placeholder="check positive or negative...">
+                            </div>
+                            <div class="mt-2 d-flex">
+                                <button class="btn btn-primary" onclick="positiveOrnegative()">OK</button>
+                                <div class="ml-auto mt-2" id="positiveOrnegative"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 p-3 third">
+                    <div class="text-white">
+                        <h2>Check Even or Odd</h2>
+                        <div class="">
+                            <div>
+                                <label>Number:</label>
+                                <input type="number" class="form-control" id="n3" placeholder="check odd or even...">
+                            </div>
+                            <div class="mt-2 d-flex">
+                                <button class="btn btn-primary" onclick="notWorking()">OK</button>
+                                <div class="ml-auto mt-2" id="notWorking"></div>
+                            </div>
+                            <div>
+                                <div id="evenOrodd"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-3 fourth">
+                    <div class="text-white">
+                        <h2>Check Quadrants</h2>
+                        <div class="">
+                            <div class="d-flex">
+                                <div>
+                                    <label>First Number:</label>
+                                    <input type="number" class="form-control" id="n41" placeholder="put value (x)...">
+                                </div>
+                                <div class="ml-auto">
+                                    <label>Second Number:</label>
+                                    <input type="number" class="form-control" id="n42" placeholder="put value (y)...">
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <button class="btn btn-primary" onclick="quadrants()">OK</button>
+                            </div>
+                            <div class="mt-3 m-2">
+                                <div class="row">
+                                    <div class="col-md-6 border-right border-bottom">
+                                        <div class="d-flex justify-content-center">
+                                            <div id="quad2" class="d-flex justify-content-center align-items-center">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 border-bottom border-left">
+                                        <div class="d-flex justify-content-center">
+                                            <div id="quad1"  class="d-flex justify-content-center align-items-center">
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 border-top border-right">
+                                        <div class="d-flex justify-content-center">
+                                            <div id="quad3" class="d-flex justify-content-center align-items-center">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 border-top border-left">
+                                        <div class="d-flex justify-content-center">
+                                            <div id="quad4" class="d-flex justify-content-center align-items-center">
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
