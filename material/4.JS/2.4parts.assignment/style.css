@@ -96,6 +96,7 @@
     #quad1, #quad2, #quad3, #quad4{
         width: 50%;
         height: 200px;
+        font-size: 12px;
     }
 }
 
@@ -120,6 +121,7 @@
     #quad1, #quad2, #quad3, #quad4{
         width: 50%;
         height: 150px;
+        font-size: 12px;
     }
 }
 

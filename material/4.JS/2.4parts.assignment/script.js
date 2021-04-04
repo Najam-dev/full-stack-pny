@@ -20,8 +20,13 @@ function positiveOrnegative(){
     }
 }
 
-function notWorking(){
-    document.getElementById("notWorking").innerHTML = "<span class=\"alert alert-warning\">Not Working!</span>";
+function checkNumberOr(){
+    var val = document.getElementById("n3").value;
+    if (isNaN(val)){
+        document.getElementById("checknumber").innerHTML = "<span class=\"alert alert-success\">It's a <b>Character</b></span>";
+    }else{
+        document.getElementById("checknumber").innerHTML = "<span class=\"alert alert-success\">It's a <b>Number</b></span>";
+    }
 }
 
 function quadrants(){

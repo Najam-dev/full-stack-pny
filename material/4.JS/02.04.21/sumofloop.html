@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Loop</title>
+</head>
+<body>
+
+    <input type="number" placeholder="Enter Starting number" id="start">
+    <input type="number" placeholder="Enter Ending Number" onblur="SumAll()" id="end">
+    <button onclick="SumAll()">SUM</button>
+    
+
+    <script>
+        function SumAll(){
+            console.log("working");
+            var start = parseInt(document.getElementById("start").value);
+            var end = parseInt(document.getElementById("end").value);
+
+            console.log(start);
+            console.log(end);
+
+            var i = start;
+            var a = 0;
+            while(i <= end){
+                
+                a = i+a;
+                i++;
+            }
+            document.write(a);
+        }
+    </script>
+</body>
+</html>

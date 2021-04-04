@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Search box</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark">
+      
+    <div>
+        <div class="container">
+            <div class="jumbotron">
+                <input class="text form-control" id="search" > 
+                <!-- onkeyup="searchList()" function on upper input-->
+                <div>
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-sm-6 mt-3">
+                            <button class="btn btn-primary" onclick="searchList()">Search</button>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6 mt-3">
+                            <button class="btn btn-primary" onclick="addList()">Add</button>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6 mt-3">
+                            <div id="random" class=""></div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6 mt-3">
+                            <button class="btn btn-primary" onclick="getRandom()">Random</button>
+                        </div>
+                        
+                        
+                    </div>
+                    <h2 class="display-4 text-center">Anime List</h2>
+                    <ul class="list-group" id="ul">
+                        <li class="list-group-item"><a href="#" class="text-dark">Moriarty the Patriot</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">Akira</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">Made in Abyss</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">Maquia: When the Promised Flower Blooms</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">ID: Invaded</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">Grave of Fireflies</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">Golden Kamuy</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">Durara</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">Drifters</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">Kingdom</a></li>
+                    </ul>
+                    <!-- <ul class="list"></ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+
+        function searchList(){
+            var search = document.getElementById("search");
+            var ul = document.getElementsByTagName("ul");
+            var li = document.getElementsByTagName("li");
+
+            var filter = search.value.toUpperCase();
+            
+
+            for(i=0; i < li.length; i++){
+                var a = li[i].getElementsByTagName("a")[0];
+                var txtvalue = a.textContent;
+                if(txtvalue.toUpperCase().indexOf(filter) > -1){
+                    li[i].style.display = "";
+                } else{
+                    li[i].style.display = "none";
+                }
+            }
+
+            console.log(txtvalue)
+
+        }
+
+        function getRandom(){
+            var ul = document.getElementsByTagName("ul");
+            var li = document.getElementsByTagName("li");
+            names = [];
+
+            for(i=0; i < li.length; i++){
+                
+                var a = li[i].getElementsByTagName("a")[0];
+                
+                names.push(a.textContent);
+                var name = names[Math.floor(Math.random() * names.length)];
+                
+                
+            }
+            document.getElementById("random").innerHTML = "<span class=\"alert alert-success\">"+name+"</span>"
+            console.log(name)
+        }
+
+        function addList(){
+            console.log("working");
+            var search = document.getElementById("search");
+            var ul = document.getElementById("ul");
+
+            var li = document.createElement("li");
+            li.classList.add("list-group-item");
+            var a = document.createElement("a");
+            a.classList.add("text-dark");
+
+
+            a.appendChild(document.createTextNode(search.value));
+            li.appendChild(a);
+            ul.appendChild(li);
+
+            console.log(ul);
+            console.log(li);
+            console.log(a);
+        }
+        
+        
+    </script>
+  </body>
+</html>
