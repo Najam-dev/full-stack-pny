@@ -14,7 +14,7 @@
     <div>
         <div class="container">
             <div class="jumbotron">
-                <input class="text form-control" id="search" > 
+                <input class="text form-control" id="search" onkeyup="searchList()"> 
                 <!-- onkeyup="searchList()" function on upper input-->
                 <div>
                     
@@ -88,33 +88,47 @@
             var li = document.getElementsByTagName("li");
             names = [];
 
-            for(i=0; i < li.length; i++){
+            if(li.length == 0){
+                alert("Enter in list before searching...")    
+            } else{
+                for(i=0; i < li.length; i++){
                 
                 var a = li[i].getElementsByTagName("a")[0];
                 
                 names.push(a.textContent);
                 var name = names[Math.floor(Math.random() * names.length)];
-                
+                document.getElementById("random").innerHTML = "<span class=\"alert alert-success\">"+name+"</span>"
                 
             }
-            document.getElementById("random").innerHTML = "<span class=\"alert alert-success\">"+name+"</span>"
-            console.log(name)
+            }
+
+            
+            
+            console.log(li.length);
         }
 
         function addList(){
-            console.log("working");
+    
             var search = document.getElementById("search");
             var ul = document.getElementById("ul");
 
-            var li = document.createElement("li");
-            li.classList.add("list-group-item");
-            var a = document.createElement("a");
-            a.classList.add("text-dark");
+            
+
+            if(search.value == ""){
+                alert("Enter a name...")
+            } else {
+
+                var li = document.createElement("li");
+                li.classList.add("list-group-item");
+                var a = document.createElement("a");
+                a.classList.add("text-dark");
 
 
-            a.appendChild(document.createTextNode(search.value));
-            li.appendChild(a);
-            ul.appendChild(li);
+                a.appendChild(document.createTextNode(search.value));
+                li.appendChild(a);
+                ul.appendChild(li);
+            }
+            
 
             console.log(ul);
             console.log(li);
