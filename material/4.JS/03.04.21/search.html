@@ -47,7 +47,7 @@
                         <li class="list-group-item"><a href="#"class="text-dark">Drifters</a></li>
                         <li class="list-group-item"><a href="#"class="text-dark">Kingdom</a></li>
                     </ul>
-                    <!-- <ul class="list"></ul> -->
+                    
                 </div>
             </div>
         </div>
@@ -79,7 +79,6 @@
                 }
             }
 
-            console.log(txtvalue)
 
         }
 
@@ -120,19 +119,31 @@
 
                 var li = document.createElement("li");
                 li.classList.add("list-group-item");
+                li.classList.add("d-flex");
+                li.classList.add("justify-content-between");
                 var a = document.createElement("a");
                 a.classList.add("text-dark");
-
+                a.classList.add("align-self-center");
+                var watch = document.createElement("button");
+                watch.classList.add("btn");
+                watch.classList.add("btn-success");
+                var aButton = document.createElement("a");
+                
 
                 a.appendChild(document.createTextNode(search.value));
                 li.appendChild(a);
                 ul.appendChild(li);
-            }
-            
 
-            console.log(ul);
-            console.log(li);
-            console.log(a);
+                watch.appendChild(document.createTextNode("Watch"));
+                aButton.classList.add("ml-auto");
+                aButton.setAttribute("href", "https://animedao.to/search/?key=overlord");
+                aButton.setAttribute("target", "_new");
+                aButton.appendChild(watch);
+                li.appendChild(aButton);
+
+                console.log(aButton)
+            }
+
         }
         
         
