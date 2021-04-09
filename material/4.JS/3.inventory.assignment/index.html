@@ -93,7 +93,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-sm-12 col-12 mt-sm-5 mt-xs-5 mt-md-0"> <!--Making Search-->
+                <div class="col-md-6 col-sm-12 col-12 mt-sm-3 mt-3 mt-md-0"> <!--Making Search-->
                     <div>
                       <fieldset class="border p-2">
                         <legend  class="w-auto">Search by Product Name</legend>
@@ -163,37 +163,40 @@
             </div>
 
             <div class="row mt-5">  <!-- Making second Row-->
-                <div class="col-md-6 col-sm-12 col-12"> <!--Making left Output -->
+                <div class="col-md-6 col-sm-12 col-12 mt-sm-3 mt-3 mt-md-0"> <!--Making left Output -->
                     <div>
-                      <table class="table table-sm bg-light border">
-                        <thead class="bg-dark text-white border">
-                          <tr>
-                            <th scope="col">Product ID</th>
-                            <th scope="col">Product Name</th>
-                            <th scope="col">Unit Price</th>
-                            <th scope="col">Qty</th>
-                            <th scope="col">Amount</th>
-                          </tr>
-                        </thead>
-                        <tbody id="tbody">
-                          <!-- <tr id="tr">
-                            <td>P-982987</td>
-                            <td>Dice CD Storage</td>
-                            <td>500</td>
-                            <td>1</td>
-                            <td id="td"><span class="span">500</span></td>
-                          </tr> -->
-                          <!-- more rows will be added here dynamically -->
-                        </tbody>
-                      </table>
-                      
+                      <fieldset class="border p-2">
+                        <legend  class="w-auto">Cart</legend>
+                        <table class="table table-sm bg-light border">
+                          <thead class="bg-dark text-white border">
+                            <tr>
+                              <th scope="col">Product ID</th>
+                              <th scope="col">Product Name</th>
+                              <th scope="col">Unit Price</th>
+                              <th scope="col">Qty</th>
+                              <th scope="col">Amount</th>
+                            </tr>
+                          </thead>
+                          <tbody id="tbody">
+                            <!-- <tr id="tr">
+                              <td>P-982987</td>
+                              <td>Dice CD Storage</td>
+                              <td>500</td>
+                              <td>1</td>
+                              <td id="td"><span class="span">500</span></td>
+                            </tr> -->
+                            <!-- more rows will be added here dynamically -->
+                          </tbody>
+                        </table>
+                        <div class="mt-3">
+                          <button class="btn btn-primary" onclick="bigTotal()">Done</button>
+                        </div>
+                       </fieldset> 
                     </div>
-                    <div class="mt-3">
-                      <button class="btn btn-primary" onclick="bigTotal()">Done</button>
-                    </div>
+                    
                 </div>
 
-                <div class="col-md-6 col-sm-12 col-12"> <!--Making Total Output right-->
+                <div class="col-md-6 col-sm-12 col-12 mt-sm-3 mt-md-0 mt-3"> <!--Making Total Output right-->
                     <div class="border p-3">
                       <div class="form-group row">
                         <label class="col-sm-4 col-form-label">Sub Total</label>

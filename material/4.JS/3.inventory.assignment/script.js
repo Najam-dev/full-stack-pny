@@ -89,24 +89,27 @@ function bigTotal(){
     var unitPrice = document.getElementById("unitPrice");
     var saleQty = document.getElementById("saleQty");
     var amount = document.getElementById("amount");
+    var tbody = document.getElementById("tbody");
+    var tr = tbody.getElementsByTagName("tr");
     var td =[]
     
-    var span = document.querySelectorAll(".span");
-    var sum = 0;
 
-    for(var j=0; j<span.length; j++){
-        td.push(span[j].childNodes[0].nodeValue);
-        sum += parseInt(span[j].childNodes[0].nodeValue);
+    if(tr.length == 0){
+        alert("Fill the cart first...")    
+    } else {
+        var span = document.querySelectorAll(".span");
+        var sum = 0;
+
+        for(var j=0; j<span.length; j++){
+            td.push(span[j].childNodes[0].nodeValue);
+            sum += parseInt(span[j].childNodes[0].nodeValue);
+        }
+
+        var subTotal = document.getElementById("subTotal");
+        subTotal.value = sum;
     }
-
-    
     
 
-    var subTotal = document.getElementById("subTotal");
-    subTotal.value = sum;
-
-    
-        
 
 }
 
