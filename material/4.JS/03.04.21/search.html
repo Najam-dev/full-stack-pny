@@ -36,7 +36,7 @@
                     </div>
                     <h2 class="display-4 text-center">Anime List</h2>
                     <ul class="list-group" id="ul">
-                        <li class="list-group-item"><a href="#" class="text-dark">Moriarty the Patriot</a></li>
+                        <!-- <li class="list-group-item"><a href="#" class="text-dark">Moriarty the Patriot</a></li>
                         <li class="list-group-item"><a href="#"class="text-dark">Akira</a></li>
                         <li class="list-group-item"><a href="#"class="text-dark">Made in Abyss</a></li>
                         <li class="list-group-item"><a href="#"class="text-dark">Maquia: When the Promised Flower Blooms</a></li>
@@ -45,7 +45,7 @@
                         <li class="list-group-item"><a href="#"class="text-dark">Golden Kamuy</a></li>
                         <li class="list-group-item"><a href="#"class="text-dark">Durara</a></li>
                         <li class="list-group-item"><a href="#"class="text-dark">Drifters</a></li>
-                        <li class="list-group-item"><a href="#"class="text-dark">Kingdom</a></li>
+                        <li class="list-group-item"><a href="#"class="text-dark">Kingdom</a></li> -->
                     </ul>
                     
                 </div>
@@ -128,22 +128,46 @@
                 watch.classList.add("btn");
                 watch.classList.add("btn-success");
                 var aButton = document.createElement("a");
+                var deleteLi = document.createElement("button");
+                deleteLi.classList.add("btn");
+                deleteLi.classList.add("btn-danger");
                 
 
                 a.appendChild(document.createTextNode(search.value));
                 li.appendChild(a);
                 ul.appendChild(li);
 
+
+                var searchName = search.value.split(" ").join("-");
+                console.log(searchName)
+
                 watch.appendChild(document.createTextNode("Watch"));
+                deleteLi.appendChild(document.createTextNode("Delete"));
                 aButton.classList.add("ml-auto");
-                aButton.setAttribute("href", "https://animedao.to/search/?key=overlord");
+                deleteLi.classList.add("ml-3");
+                aButton.setAttribute("href", "https://animedao.to/anime/"+searchName+"/");
                 aButton.setAttribute("target", "_new");
                 aButton.appendChild(watch);
+                deleteLi.setAttribute("onclick", "deleteList()");
                 li.appendChild(aButton);
+                li.appendChild(deleteLi);
 
-                console.log(aButton)
+                
             }
 
+        }
+
+        function deleteList(){
+            //var li = document.getElementsByTagName("li");
+            //console.log(li[0])
+            
+            // var lis = document.querySelectorAll('#ul li');
+            // for(var i=0; li=lis[i]; i++) {
+            //     li.parentNode.removeChild(li);
+            //     i = i+1;
+            // }
+
+            alert("abhi not working");
         }
         
         
