@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Slideshow</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .design{
+            font-size: 20px;
+            padding: 5px;
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+      
+    <div>
+        <div class="container">
+            <div class="alert alert-primary" id="paras">
+                <div class="design active" style="background-color: firebrick;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae animi dignissimos repudiandae quod, similique, aliquam eos unde cupiditate iure, veritatis magni explicabo provident voluptatum reprehenderit.</div>
+                <div class="design" style="background-color: darkcyan">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos provident sequi dolore necessitatibus minima esse!</div>
+                <div class="design" style="background-color: tan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi velit officia distinctio dolorem blanditiis sunt sapiente reiciendis, fugiat nulla maiores.</div>
+                <div class="design" style="background-color: violet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, et neque inventore, voluptatem accusamus at sunt consectetur asperiores temporibus, modi quam animi eum quas laboriosam perspiciatis. Alias fugiat doloribus nemo.</div>
+                <div class="design" style="background-color: indianred">Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div>
+                <button class="btn btn-outline-primary" id="back">Back</button>
+                <button class="btn btn-outline-primary" id="next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#next").click(function(){
+                var divActive = $("div.active");
+                divActive.removeClass("active");
+
+                if(divActive.next().length == 0){
+                    $("div.design").eq(0).addClass("active");
+                } else{
+                    divActive.next().addClass("active");
+                }
+                
+            })
+
+            $("#back").click(function(){
+                var divActive = $("div.active");
+                divActive.removeClass("active");
+
+                if(divActive.prev().length == 0){
+                    $("div.design").eq(4).addClass("active");
+                } else{
+                    divActive.prev().addClass("active");
+                }
+                
+            })
+            
+            setInterval(function(){
+                var divActive = $("div.active");
+                divActive.removeClass("active");
+
+                if(divActive.next().length == 0){
+                    $("div.design").eq(0).addClass("active");
+                } else{
+                    divActive.next().addClass("active");
+                }
+                
+            }, 4000)
+        })
+
+    </script>
+  </body>
+</html>

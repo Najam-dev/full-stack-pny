@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable / Droppable</title>
+
+    <style>
+        .divBox{
+            background: khaki;
+            border: 3px solid black;
+            display: inline-table;
+            font-size: 18px;
+            padding: 20px;
+            
+        }
+
+        ul{
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div class="divBox">
+            <h2>Countries & Cities</h2>
+            <ul id="mainBox">
+                <li data-value="city">Lahore</li>
+                <li data-value="country">Pakistan</li>
+                <li data-value="country">Japan</li>
+                <li data-value="city">Karachi</li>
+                <li data-value="city">Tokyo</li>
+                <li data-value="country">China</li>
+                <li data-value="city">Islamabad</li>
+            </ul>
+        </div>
+        
+        <div class="divBox" id="divCountries">
+            <h2>Countries</h2>
+            <ul id="countries">
+            
+            </ul>
+        </div>
+        
+
+        <div class="divBox" id="divCities">
+            <h2>Cities</h2>
+            <ul id="cities">
+            
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#mainBox li").draggable({
+                helper : "clone",
+                revert : "invalid"
+            })
+
+            $("#divCountries").droppable({
+                accept : "li[data-value='country']",
+                drop: function(even, ui){
+                    $("#countries").append(ui.draggable);
+                }
+            })
+
+            $("#divCities").droppable({
+                accept : 'li[data-value="city"]',
+                drop: function(even, ui){
+                    $("#cities").append(ui.draggable);
+                }
+            })
+        })
+
+    </script>
+
+
+</body>
+</html>

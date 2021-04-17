@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: purple;
+            border: 5px solid rgb(75, 26, 75);
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="zoomIn">Zoom In</button>
+    <button id="zoomOut" class="hide">Zoom Out</button>
+    <br><br>
+
+    <div id="box" class="box"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#zoomIn").click(function(){
+                $("#box").animate({
+                    width : "500px",
+                    height : "300px",
+                    marginLeft : "150px",
+                    borderWidth : "10px",
+                    opacity : 0.5
+                })
+                $("#zoomIn").toggleClass("hide");
+                $("#zoomOut").toggleClass("hide");
+            })
+
+            $("#zoomOut").click(function(){
+                $("#box").animate({
+                    width: "100px",
+                    height: "100px",
+                    marginLeft : "0px",
+                    borderWidth : "5px",
+                    opacity : 1
+                })
+                $("#zoomIn").toggleClass("hide");
+                $("#zoomOut").toggleClass("hide");
+            })
+        })
+    </script>
+</body>
+</html>
