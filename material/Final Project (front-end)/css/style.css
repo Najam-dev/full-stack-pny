@@ -5,6 +5,9 @@ body {
 
 main {
     height: calc(100vh - 56px);
+}
+
+.index-main {
     background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 0%),
         url("../imgs/chat1.jpg") no-repeat;
     background-size: cover;
